@@ -1,4 +1,4 @@
-@extends('teacher.layout');
+@extends('teacher.layout')
 
 @section('content')
 <div class="content-wrapper">

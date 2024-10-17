@@ -50,7 +50,7 @@
                                </div>
                                <div class="form-group col-md-3">
                                 <select name="subject_id" class="form-control" id="subject_id">
-                                    <option value="">Select Subject</option>
+                                    <option value="{{ $subject->id }}" {{$subject->id == request('subject_id') ? 'selected' : ''}}>{{ $subject->name }}>Select Subject</option>
 
                                 </select>
                                </div>
