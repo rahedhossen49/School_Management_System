@@ -14,7 +14,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Tutoring Done Properly</h5>
                     <p>Educator is a premium education theme packed with everything you will ever need for creating the website for your school.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -22,7 +21,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Innovative Learning</h5>
                     <p>Take your learning experience to the next level with cutting-edge tools and resources.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
             <div class="carousel-item">
@@ -30,7 +28,6 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Empowering Education</h5>
                     <p>Join thousands of students in transforming their educational journey.</p>
-                    <a href="#" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>

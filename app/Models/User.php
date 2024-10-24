@@ -18,6 +18,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'image',
         'email',
         'password',
     ];
@@ -54,6 +55,7 @@ class User extends Authenticatable
     public function StudentacademicYear(){
         return $this->belongsTo(AcademicYear::class,'academic_year_id');
     }
+
 
 
 }

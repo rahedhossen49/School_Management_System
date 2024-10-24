@@ -16,6 +16,7 @@ use App\Http\Controllers\AssignSubjectToClassController;
 use App\Http\Controllers\AssignTeacherToClassController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\OurStudentController;
 use App\Http\Controllers\OurTeacherController;
 use App\Http\Controllers\TimestableController;
@@ -35,6 +36,8 @@ route::get('/',[HomeController::class,'index'])->name('home');
 route::get('/contact',[ContactController::class,'index'])->name('contact');
 route::get('/our-teacer',[OurTeacherController::class,'index'])->name('HomePage.Ourteacher');
 route::get('/our-student',[OurStudentController::class,'index'])->name('HomePage.OurStudent');
+route::get('/OurTeacher_Read',[OurTeacherController::class,'read'])->name('HomePage.read');
+route::get('/notice',[NoticeController::class,'index'])->name('HomePage.notice');
 // route::post('/contact',[ContactController::class,'store'])->name('contact.store');
 
 

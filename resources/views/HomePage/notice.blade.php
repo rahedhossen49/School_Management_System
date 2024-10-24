@@ -54,7 +54,7 @@
 }
 </style>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" >
     <div class="container">
         <a class="navbar-brand" href="#"><img src="{{asset('admin_panel/school/logo.png')}}" style="height: 80px;" alt="Educator Logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,74 +91,60 @@
     </div>
 </nav>
 
-<body>
 
-    <div class="container mt-5">
 
-    <div class="bg-ligth text-bg-light">
-        <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb ">
-            <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Our Student</li>
-        </ol>
-    </nav>
-    <h2 class="mb-4 text-center">Our Student</h2>
-        </div>
-    </div>
-
-    <div class="container my-5">
-        <div class="row">
-            <!-- Second row of staff members -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Lisa Jones</h5>
-                <p>Teacher</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Marry Burns</h5>
-                <p>Teacher</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Joan Smith</h5>
-                <p>Assistant</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Kim Tims</h5>
-                <p>Teacher</p>
-            </div>
-        </div>
-        <div class="row">
-            <!-- Second row of staff members -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Lisa Jones</h5>
-                <p>Teacher</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Marry Burns</h5>
-                <p>Teacher</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Joan Smith</h5>
-                <p>Assistant</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Kim Tims</h5>
-                <p>Teacher</p>
-            </div>
-        </div>
-    </div>
-    </body>
+<div class="text-center my-5">
+    <img src="{{asset('admin_panel/school/school.jpg')}}" class="img-fluid" alt="Contact Us" style="width: 80%; height: 300px;">
+</div>
 
 
 
-    <footer class="bg-dark text-light py-4" style=" bottom: 0; width: 100%; margin-top: 100px;">
+<div class="container mt-5">
+    <h1 class="mb-4">নোটিশ</h1>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>ক্রমিক</th>
+                <th class="text-center">শিরোনাম</th>
+                <th>প্রকাশের তারিখ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>১</td>
+                <td>২০২৪-২৫ অর্থবছরের বাজেটে মাধ্যমিক ও উচ্চশিক্ষা অধিদপ্তর- অধিদপ্তরের আওতাধীন অফিস-জেলা শিক্ষা অফিস-উপজেলা মাধ্যমিক শিক্ষা অফিস-সরকারি শিক্ষক প্রশিক্ষণ কলেজ-এইচএসটিটিআই-সরকারি কলেজ-সরকারি মাধ্যমিক বিদ্যালয় সমূহখাতে বরাদ্দ প্রদান।</td>
+                <td>২০২৪-১০-২২</td>
+            </tr>
+            <tr>
+                <td>২</td>
+                <td>পারফরমেন্স বেজড গ্রান্টস ফর সেকেন্ডারি ইন্সটিটিউশনস (PBGS) স্কিমের আওতায় “স্কুল-মাদ্রাসা-কেরোশ্র-কলেজ ব্যবহারকৃত অর্থের বিল ভাউচার চেক দাখিল এবং সঠিক হিসাব প্রদান।</td>
+                <td>২০২৪-১০-২২</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>পারফরমেন্স বেজড গ্রান্টস ফর সেকেন্ডারি ইন্সটিটিউশনস (PBGS) স্কিমের আওতায় “স্কুল-মাদ্রাসা-কেরোশ্র-কলেজ ব্যবহারকৃত অর্থের বিল ভাউচার চেক দাখিল এবং সঠিক হিসাব প্রদান।</td>
+                <td>২০২৪-১০-২২</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>পারফরমেন্স বেজড গ্রান্টস ফর সেকেন্ডারি ইন্সটিটিউশনস (PBGS) স্কিমের আওতায় “স্কুল-মাদ্রাসা-কেরোশ্র-কলেজ ব্যবহারকৃত অর্থের বিল ভাউচার চেক দাখিল এবং সঠিক হিসাব প্রদান।</td>
+                <td>২০২৪-১০-২২</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-light py-4" style=" bottom: 0; width: 100%; margin-top: 100px;">
+
     <div class="container">
         <div class="row">
             <!-- Educate Section -->

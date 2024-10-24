@@ -71,14 +71,14 @@
                         Pages
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <li><a class="dropdown-item" href="{{route('teacher.dashboard')}}">Our Teachers</a></li>
-                        <li><a class="dropdown-item" href="{{route('student.dashboard')}}">Our Student</a></li>
-                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="#">FAQ Page</a></li>
+                        <li><a class="dropdown-item" href="{{route('HomePage.Ourteacher')}}">Our Teachers</a></li>
+                        <li><a class="dropdown-item" href="{{route('HomePage.OurStudent')}}">Our Studentt</a></li>
+                        <li><a class="dropdown-item" href="{{ route('teacher.dashboard') }}">Teachers Login</a></li>
+                        <li><a class="dropdown-item" href="{{route('student.dashboard')}}">Student Login</a></li>
                         </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Notice</a>
+                    <a class="nav-link" href="{{route('HomePage.notice')}}">Notice</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Contact</a>
@@ -91,91 +91,160 @@
     </div>
 </nav>
 
-<style>
-    .teacher-card {
-        border: 1px solid #ddd; /* Optional: Adds a border around the card */
-        border-radius: 10px; /* Optional: Rounded corners */
-        overflow: hidden; /* Ensures content doesn't overflow */
-        transition: transform 0.2s; /* Adds a nice hover effect */
-    }
-
-    .teacher-card:hover {
-        transform: scale(1.05); /* Scale up on hover */
-    }
-
-    .teacher-image {
-        width: 100%; /* Makes image responsive */
-        height: auto; /* Maintains aspect ratio */
-    }
-
-    .teacher-name {
-        font-weight: bold;
-    }
-
-    .teacher-position {
-        color: gray; /* Optional: Change color for position */
-    }
-</style>
-</head>
 <body>
 
-<div class="container mt-5">
-<div class="row">
-
-    <!-- Teacher  -->
 
 
-    <div class="col-12 col-sm-6 col-md-4 mb-4">
-        <div class="teacher-card text-center p-3">
-            <img src="https://via.placeholder.com/150" alt="Rosa Echols" class="teacher-image">
-            <p class="teacher-name">Rosa Echols</p>
-            <p class="teacher-position">Subject Teacher</p>
+
+
+    <div class="container mt-5">
+        <div class="bg-ligth text-bg-light">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb ">
+                <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Our Teachers</li>
+            </ol>
+        </nav>
+        <h2 class="mb-4 text-center">Our Teachers</h2>
+            </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Teacher" class="img-fluid rounded">
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="fw-bold">Joseph White</h3>
+                <p class="text-muted">Exerci deserunt ei qui, nec ceteros quaerendum et, appareat abhorreant no. Mel minim novum invenire no.</p>
+
+                <p>Ad est fugit senserit contentiones. Sumo aperian his at, ei nam mucius possim accusam. Duo minim dicti contentiones cu, dolor soluta ne nec, id nisl augue eos. At aeque corpora partiendo sea, id ipsum omnium disputationi pri, eum eu ipsum placerat.</p>
+            </div>
         </div>
     </div>
 
 
-</div>
-</div>
 
 
 
 
 
-<footer class="bg-dark text-light py-4 " style="margin-top: 100px;">
+
+
+
+
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Second row of staff members -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Lisa Jones</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Marry Burns</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Joan Smith</h5>
+                <p>Assistant</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Second row of staff members -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Lisa Jones</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Marry Burns</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Joan Smith</h5>
+                <p>Assistant</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+
+
+    <footer class="bg-dark text-light py-4" style=" bottom: 0; width: 100%; margin-top: 100px;">
     <div class="container">
-        <div class="row px-3 mt-4">
-            <!-- Contact and Google Map -->
-            <div class="col-12 col-sm-6 mb-4">  <!-- Changed to col-12 for extra small devices -->
-                <h5>Contact</h5>
-                <p>02-9836440</p>
-                <h5>Google Map</h5>
-                <div class="embed-responsive embed-responsive-4by3">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.648148030093!2d90.38777921536355!3d23.793174792332748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c743812bb3f9%3A0xa9347f90e2a15d47!2sBAF%20Shaheen%20College!5e0!3m2!1sen!2sbd!4v1603065290095!5m2!1sen!2sbd"
-                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
-                </div>
+        <div class="row">
+            <!-- Educate Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Educate</h5>
+                <p>Providing life-changing experiences through education. Class that fits your busy life, closer to home.</p>
+                <p><i class="bi bi-telephone"></i> 1-677-124-44227</p>
+                <p><i class="bi bi-clock"></i> Mon - Sat 8:00 - 18:00</p>
             </div>
 
-            <!-- Address and Email Us -->
-            <div class="col-12 col-sm-6 mb-4 ps-md-5">  <!-- Changed to col-12 for extra small devices -->
-                <h5>Address</h5>
-                <p>3rd Gate, Near Xyz Gate, Chittagong 1206</p>
-                <h5>Email Us</h5>
-                <p><a href="mailto:XYZ@.edu.bd" class="text-light">XYZ@.edu.bd</a></p>
-                <p><a href="mailto:XYZ@gmail.com" class="text-light">XYZ@gmail.com</a></p>
+            <!-- Latest News Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Latest News</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Graduate Admissions</a> <br> by Craig Murphy</li>
+                    <li><a href="#" class="text-light">Continuing Education</a> <br> by Craig Murphy</li>
+                    <li><a href="#" class="text-light">Current Students</a> <br> by Craig Murphy</li>
+                </ul>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Popular Courses</a></li>
+                    <li><a href="#" class="text-light">Forums</a></li>
+                    <li><a href="#" class="text-light">Our Teachers</a></li>
+                    <li><a href="#" class="text-light">Upcoming Events</a></li>
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Flexible Learning Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Flexible Learning</h5>
+                <div class="ratio ratio-16x9">
+                    <!-- Embedded Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.648148030093!2d90.38777921536355!3d23.793174792332748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c743812bb3f9%3A0xa9347f90e2a15d47!2sBAF%20Shaheen%20College!5e0!3m2!1sen!2sbd!4v1603065290095!5m2!1sen!2sbd"
+                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                    </iframe>
+                </div>
             </div>
         </div>
 
         <!-- Copyright Section -->
         <div class="row">
-            <div class="col-12 text-center mt-3 bg-secondary">
-                <p class="text-white mb-0">&copy; 2024 XYZ Chittagong, Powered By: XyZ</p>
+            <div class="col-12 text-center mt-3">
+                <p class="text-light mb-0">&copy; 2024 XYZ Chittagong, Powered By: XYZ</p>
             </div>
         </div>
-
-        </div>
     </div>
+
+
+<!-- CSS for Footer Behavior -->
 </footer>
+<!-- Bootstrap JS and Popper.js -->
 
 @include('HomePage.layout.Js')

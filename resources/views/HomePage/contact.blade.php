@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
 
 
 <div class="topbar py-2">
@@ -71,16 +76,16 @@
                         Pages
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <li><a class="dropdown-item" href="{{route('teacher.dashboard')}}">Our Teachers</a></li>
-                        <li><a class="dropdown-item" href="{{route('student.dashboard')}}">Our Student</a></li>
-                        <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="#">FAQ Page</a></li>
-                        </ul>
+                        <li><a class="dropdown-item" href="{{route('HomePage.Ourteacher')}}">Our Teachers</a></li>
+                        <li><a class="dropdown-item" href="{{route('HomePage.OurStudent')}}">Our Studentt</a></li>
+                        <li><a class="dropdown-item" href="{{route('teacher.dashboard')}}">Teachers Login</a></li>
+                        <li><a class="dropdown-item" href="{{route('student.dashboard')}}">Student Login</a></li>
+                       </ul>
                 </li>
 
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Notice</a>
+                    <a class="nav-link" href="{{route('HomePage.notice')}}">Notice</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('contact')}}">Contact</a>
@@ -94,7 +99,7 @@
 </nav>
 <!-- Single Image Section -->
 <div class="text-center my-5">
-    <img src="{{asset('admin_panel/school/imag.jpg')}}" class="img-fluid" alt="Contact Us" style="max-width: 1800px; height: 400px;">
+    <img src="{{asset('admin_panel/school/imag.jpg')}}" class="img-fluid" alt="Contact Us" style="max-width: 100%; height: 400px;">
 </div>
 
 <!-- Contact Form and Address -->
@@ -130,43 +135,70 @@
         </div>
     </div>
 </div>
+<!-- Footer Section -->
 
+<footer class="bg-dark text-light py-4" style=" bottom: 0; width: 100%; margin-top: 100px; justify-content:end">
 
-
-<footer class="bg-dark text-light py-4 " style="margin-top: 100px;">
     <div class="container">
-        <div class="row px-3 mt-4">
-            <!-- Contact and Google Map -->
-            <div class="col-12 col-sm-6 mb-4">  <!-- Changed to col-12 for extra small devices -->
-                <h5>Contact</h5>
-                <p>02-9836440</p>
-                <h5>Google Map</h5>
-                <div class="embed-responsive embed-responsive-4by3">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.648148030093!2d90.38777921536355!3d23.793174792332748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c743812bb3f9%3A0xa9347f90e2a15d47!2sBAF%20Shaheen%20College!5e0!3m2!1sen!2sbd!4v1603065290095!5m2!1sen!2sbd"
-                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-                    </iframe>
-                </div>
+        <div class="row">
+            <!-- Educate Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Educate</h5>
+                <p>Providing life-changing experiences through education. Class that fits your busy life, closer to home.</p>
+                <p><i class="bi bi-telephone"></i> 1-677-124-44227</p>
+                <p><i class="bi bi-clock"></i> Mon - Sat 8:00 - 18:00</p>
             </div>
 
-            <!-- Address and Email Us -->
-            <div class="col-12 col-sm-6 mb-4 ps-md-5">  <!-- Changed to col-12 for extra small devices -->
-                <h5>Address</h5>
-                <p>3rd Gate, Near Xyz Gate, Chittagong 1206</p>
-                <h5>Email Us</h5>
-                <p><a href="mailto:XYZ@.edu.bd" class="text-light">XYZ@.edu.bd</a></p>
-                <p><a href="mailto:XYZ@gmail.com" class="text-light">XYZ@gmail.com</a></p>
+            <!-- Latest News Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Latest News</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Graduate Admissions</a> <br> by Craig Murphy</li>
+                    <li><a href="#" class="text-light">Continuing Education</a> <br> by Craig Murphy</li>
+                    <li><a href="#" class="text-light">Current Students</a> <br> by Craig Murphy</li>
+                </ul>
+            </div>
+
+            <!-- Useful Links Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Popular Courses</a></li>
+                    <li><a href="#" class="text-light">Forums</a></li>
+                    <li><a href="#" class="text-light">Our Teachers</a></li>
+                    <li><a href="#" class="text-light">Upcoming Events</a></li>
+                    <li><a href="#" class="text-light">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Flexible Learning Section -->
+            <div class="col-md-3 col-12 mb-4">
+                <h5 class="text-uppercase">Flexible Learning</h5>
+                <div class="ratio ratio-16x9">
+                    <!-- Embedded Google Map -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.648148030093!2d90.38777921536355!3d23.793174792332748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c743812bb3f9%3A0xa9347f90e2a15d47!2sBAF%20Shaheen%20College!5e0!3m2!1sen!2sbd!4v1603065290095!5m2!1sen!2sbd"
+                        width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0">
+                    </iframe>
+                </div>
             </div>
         </div>
 
         <!-- Copyright Section -->
         <div class="row">
-            <div class="col-12 text-center mt-3 bg-secondary">
-                <p class="text-white mb-0">&copy; 2024 XYZ Chittagong, Powered By: XyZ</p>
+            <div class="col-12 text-center mt-3">
+                <p class="text-light mb-0">&copy; 2024 XYZ Chittagong, Powered By: XYZ</p>
             </div>
         </div>
-
-        </div>
     </div>
+
+
+<!-- CSS for Footer Behavior -->
 </footer>
+<!-- Bootstrap JS and Popper.js -->
+
 @include('HomePage.layout.Js')
+
+</body>
+</html>

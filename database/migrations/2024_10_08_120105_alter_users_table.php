@@ -21,6 +21,9 @@ return new class extends Migration
             if (!Schema::hasColumn('users', 'admission_date')) {
                 $table->string('admission_date')->nullable();
             }
+            if (!Schema::hasColumn('users', 'image')) {
+                $table->string('image')->nullable();
+            }
 
             if (!Schema::hasColumn('users', 'father_name')) {
                 $table->string('father_name')->nullable();

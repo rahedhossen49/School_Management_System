@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class OurTeacherController extends Controller
@@ -10,11 +11,18 @@ class OurTeacherController extends Controller
         return view('HomePage.Ourteacher');
     }
 
-
-    // public function index()
-    // {
-    //     // Fetch all teachers for the navigation
-    //     $teachers = ::all();
-    //     return view('teachers.index', compact('teachers'));
+    // public function read(){
+    //     $data['teachers'] = User::where('role','teacher')->latest()->get();
+    //     return view('admin.teacher.table',$data);
     // }
+    public function read()
+{
+
+
+//   $data['teachers'] = User::where('role','teacher')->latest()->get();
+
+//     // Pass the $teachers variable to the view
+//     return view('HomePage.Ourteacher', compact('teachers'));
+}
+
 }
