@@ -14,11 +14,30 @@ use App\Http\Controllers\AcademicYearController;
 use App\Http\Controllers\AnnouncementsController;
 use App\Http\Controllers\AssignSubjectToClassController;
 use App\Http\Controllers\AssignTeacherToClassController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OurStudentController;
+use App\Http\Controllers\OurTeacherController;
 use App\Http\Controllers\TimestableController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+// Route::get('/home',function(){
+//     return view('HomePage.homepage');
+// });
+
+
+route::get('/',[HomeController::class,'index'])->name('home');
+route::get('/contact',[ContactController::class,'index'])->name('contact');
+route::get('/our-teacer',[OurTeacherController::class,'index'])->name('HomePage.Ourteacher');
+route::get('/our-student',[OurStudentController::class,'index'])->name('HomePage.OurStudent');
+// route::post('/contact',[ContactController::class,'store'])->name('contact.store');
+
+
 
 // * Student validation login
 
