@@ -19,7 +19,7 @@
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#={{ route('teacher.dashboard') }}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                             <li class="breadcrumb-item active">My Class & Subject</li>
                         </ol>
                     </div>

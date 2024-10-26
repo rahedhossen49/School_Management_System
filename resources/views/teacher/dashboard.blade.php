@@ -1,97 +1,47 @@
 @extends('teacher.layout')
 
 @section('content')
+
 <div class="content-wrapper">
 
-<div class="content-header">
-<div class="container-fluid">
-<div class="row mb-2">
-<div class="col-sm-6">
-<h1 class="m-0">Teacher  Dashboard</h1>
-</div>
-<div class="col-sm-6">
-<ol class="breadcrumb float-sm-right">
-<li class="breadcrumb-item"><a href="#">Home</a></li>
-<li class="breadcrumb-item active">Dashboard v1</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
+    <div class="content-header">
+        <div class="container-fluid">
+            {{-- <div class="row">
+                <div class="col-md-12">
+                    @foreach ($announcement as $item)
+                        <div class='alert alert-warning'>
+                            {{$item->message}}
+                        </div>
+                    @endforeach
+                </div>
+            </div> --}}
+        <div class="row mb-2">
+        <div class="col-sm-6">
+        <h1 class="m-0">Dashboard</h1>
+        @if (Carbon\Carbon::parse(Auth::user()->dob)->isBirthday())
+            Happy Birthday {{ Auth::user()->name }}
+        @endif
+
+        </div>
+        <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+        <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+        <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+        </div>
+        </div>
+        </div>
+        </div>
 
 
-<section class="content">
-<div class="container-fluid">
-
-<div class="row">
-
-<div class="col-lg-3 col-6">
-
-<div class="small-box bg-info">
-<div class="inner">
-<h3>150</h3>
-<p>New Orders</p>
-</div>
-<div class="icon">
-<i class="ion ion-bag"></i>
-</div>
-<a href="#" class="small-box-footer">More info <i
-class="fas fa-arrow-circle-right"></i></a>
-</div>
-</div>
-
-<div class="col-lg-3 col-6">
-
-<div class="small-box bg-success">
-<div class="inner">
-<h3>53<sup style="font-size: 20px">%</sup></h3>
-<p>Bounce Rate</p>
-</div>
-<div class="icon">
-<i class="ion ion-stats-bars"></i>
-</div>
-<a href="#" class="small-box-footer">More info <i
-class="fas fa-arrow-circle-right"></i></a>
-</div>
-</div>
-
-<div class="col-lg-3 col-6">
-
-<div class="small-box bg-warning">
-<div class="inner">
-<h3>44</h3>
-<p>User Registrations</p>
-</div>
-<div class="icon">
-<i class="ion ion-person-add"></i>
-</div>
-<a href="#" class="small-box-footer">More info <i
-class="fas fa-arrow-circle-right"></i></a>
-</div>
-</div>
-
-<div class="col-lg-3 col-6">
-
-<div class="small-box bg-danger">
-<div class="inner">
-<h3>65</h3>
-<p>Unique Visitors</p>
-</div>
-<div class="icon">
-<i class="ion ion-pie-graph"></i>
-</div>
-<a href="#" class="small-box-footer">More info <i
-class="fas fa-arrow-circle-right"></i></a>
-</div>
-</div>
+        <div class="container mt-5 text-center">
+            <h3 class="text-dark">Hi Student</h3>
+            <h1 class="display-3 fw-bold text-primary">Welcome to</h1>
+            <h2 class="display-2 text-uppercase text-dark">Chittagong Government School</h2>
+            <p class="lead mt-4 text-muted">Providing quality education for future generations with a focus on excellence and discipline.</p>
+        </div>
 
 </div>
 
 
-
-
-</div>
-</section>
-
-</div>
 @endsection

@@ -108,52 +108,65 @@
 
     <div class="container my-5">
         <div class="row">
-            <!-- Second row of staff members -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+            <!-- Staff members -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
                 <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
                 <h5>Lisa Jones</h5>
                 <p>Teacher</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Marry Burns" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
                 <h5>Marry Burns</h5>
                 <p>Teacher</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Joan Smith" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
                 <h5>Joan Smith</h5>
                 <p>Assistant</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
                 <h5>Kim Tims</h5>
                 <p>Teacher</p>
             </div>
-        </div>
-        <div class="row">
-            <!-- Second row of staff members -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Lisa Jones</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
                 <p>Teacher</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Marry Burns</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
                 <p>Teacher</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
-                <h5>Joan Smith</h5>
-                <p>Assistant</p>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Lisa Jones" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
+                <h5>Kim Tims</h5>
+                <p>Teacher</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
+                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" alt="Kim Tims" class="img-fluid rounded-circle mb-3" style="width: 100px; height: 100px;">
                 <h5>Kim Tims</h5>
                 <p>Teacher</p>
             </div>
         </div>
     </div>
+
     </body>
 
 

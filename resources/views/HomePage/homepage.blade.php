@@ -107,7 +107,53 @@
 
 @include('HomePage.layout.content')
 
+<div class="container mt-5">
+    <div class="text-center">
+        <h2>About Us</h2>
+        <p>Etiam porttitor risus massa nec condiment gravida nibh vel velit auctor aliquetenean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit.</p>
+    </div>
+    <div class="row mt-4">
+        <!-- Welcome to Educator Section -->
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{{ asset('admin_panel/school/about.jpg') }}" class="img-fluid" alt="Why us?" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Welcome to Educator
+                    </h5>
+                    <p class="card-text">Etiam porttitor risus massa nec condiment gravida nibhvelit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit.</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Why Us Section -->
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{{ asset('admin_panel/school/about2.jpg') }}" class="img-fluid" alt="Why us?" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Why us?</h5>
+                    <p class="card-text">Etiam porttitor risus massa nec condiment gravida nibhvelit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auci elit consequat ipsutis sem nibh id elit.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Learning Includes Section -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body h-70">
+                    <h5 class="card-title">Learning includes</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success"></i> We enrich lives through playing</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Guiding the young generation</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Learn to confidently talk</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Children blossoming at school</li>
+                        <li><i class="bi bi-check-circle-fill text-success"></i> Excellence in early childhood</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div class="container text-center py-5">
@@ -170,7 +216,7 @@
         <!-- First Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5"> <!-- Adjusted for better responsiveness -->
             <div class="card">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" class="card-img-top" alt="Event 1" style="height: 150px;"> <!-- Adjusted image height -->
+                <img src="{{ asset('admin_panel/school/latest.jpg') }}" class="card-img-top" alt="Event 1" style="height: 150px;"> <!-- Adjusted image height -->
                 <div class="card-body">
                     <h5 class="card-title">Summer Camp</h5>
                     <p class="card-text"><i class="bi bi-geo-alt"></i> 354 Shuter St Toronto</p>
@@ -181,7 +227,7 @@
         <!-- Second Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
             <div class="card">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" class="card-img-top" alt="Event 2" style="height: 150px;">
+                <img src="{{ asset('admin_panel/school/latest2.jpg') }}" class="card-img-top" alt="Event 2" style="height: 150px;">
                 <div class="card-body">
                     <h5 class="card-title">Sports Day</h5>
                     <p class="card-text"><i class="bi bi-geo-alt"></i> 244 Lisgar St Toronto</p>
@@ -192,7 +238,7 @@
         <!-- Third Card -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5">
             <div class="card">
-                <img src="{{ asset('admin_panel/dist/img/avatar4.png') }}" class="card-img-top" alt="Event 3" style="height: 150px;">
+                <img src="{{ asset('admin_panel/school/latest3.jpg') }}" class="card-img-top" alt="Event 3" style="height: 150px;">
                 <div class="card-body">
                     <h5 class="card-title">School Play</h5>
                     <p class="card-text"><i class="bi bi-geo-alt"></i> 354 Shuter St Toronto</p>
