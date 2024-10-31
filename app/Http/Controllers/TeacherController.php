@@ -20,7 +20,6 @@ class TeacherController extends Controller
 
         $request->validate([
             'name' => 'required',
-            'image' => 'required',
             'father_name' => 'required',
             'mother_name' => 'required',
             'email' => 'required|email|unique:users,email',
@@ -31,7 +30,6 @@ class TeacherController extends Controller
 
         $user = new User();
         $user->name = $request->name;
-        $user->image = $request->image;
         $user->father_name = $request->father_name;
         $user->mother_name = $request->mother_name;
         $user->email = $request->email;
@@ -66,7 +64,6 @@ class TeacherController extends Controller
         ]);
 
         $teacher->name = $request->name;
-        $teacher->image = $request->image;
         $teacher->father_name = $request->father_name;
         $teacher->mother_name = $request->mother_name;
         $teacher->email = $request->email;

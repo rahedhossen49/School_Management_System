@@ -59,6 +59,7 @@ class TimestableController extends Controller
     public function read(Request $request)
     {
         $data['classes'] = Classes::all();
+        $data['subjects'] = subject::all();
         $tabletimes = Timestable::with('class','subject','day');
         if($request->class_id){
             $tabletimes->where('class_id',$request->class_id);

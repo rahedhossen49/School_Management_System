@@ -72,20 +72,28 @@
                                         </thead>
                                         <tbody>
                                             @php
-                                                $i = 1;
+                                            $i = 1; // Initialize counter for timetable array
+                                        @endphp
+
+                                        @foreach ($days as $day) <!-- Ensure $days contains unique days -->
+                                            <tr>
+                                                <td>{{ $day->name }}</td>
+                                                <input type="hidden" name="timetable[{{ $i }}][day_id]" value="{{ $day->id }}">
+                                                <td>
+                                                    <input type="time" name="timetable[{{ $i }}][start_time]" id="start_time_{{ $i }}">
+                                                </td>
+                                                <td>
+                                                    <input type="time" name="timetable[{{ $i }}][end_time]" id="end_time_{{ $i }}">
+                                                </td>
+                                                <td>
+                                                    <input type="number" name="timetable[{{ $i }}][room_no]" id="room_no_{{ $i }}" placeholder="Room Number">
+                                                </td>
+                                            </tr>
+                                            @php
+                                                $i++;
                                             @endphp
-                                            @foreach ($days as $day)
-                                                <tr>
-                                                    <td>{{ $day->name }}</td>
-                                                    <input type="hidden" name="timetable[{{ $i }}][day_id]" value="{{ $day->id }}">
-                                                    <td><input type="time" name="timetable[{{ $i }}][start_time]" id="start_time_{{ $i }}"></td>
-                                                    <td><input type="time" name="timetable[{{ $i }}][end_time]" id="end_time_{{ $i }}"></td>
-                                                    <td><input type="number" name="timetable[{{ $i }}][room_no]" id="room_no_{{ $i }}" placeholder="Room Number"></td>
-                                                </tr>
-                                                @php
-                                                    $i++;
-                                                @endphp
-                                            @endforeach
+                                        @endforeach
+
                                         </tbody>
                                     </table>
 
